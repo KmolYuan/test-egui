@@ -1,0 +1,13 @@
+[workspace]
+resolver = "3"
+members = [
+    "client",
+    "server",
+]
+
+[workspace.package]
+version = "0.1.0"
+edition = "2024"
+
+[profile.release.package.client]
+opt-level = 2 # fast and small wasm
